@@ -31,9 +31,9 @@ namespace MainSub
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chkPhai = new System.Windows.Forms.CheckBox();
             this.bdnSinhVien = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -216,22 +216,23 @@ namespace MainSub
             this.DgvKetqua.Size = new System.Drawing.Size(601, 219);
             this.DgvKetqua.TabIndex = 78;
             this.DgvKetqua.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DgvKetqua_RowValidating);
+            this.DgvKetqua.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.DgvKetqua_UserDeletedRow);
             // 
             // colMaMon
             // 
             this.colMaMon.DataPropertyName = "MaMH";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
-            this.colMaMon.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.colMaMon.DefaultCellStyle = dataGridViewCellStyle4;
             this.colMaMon.HeaderText = "Mã Môn";
             this.colMaMon.Name = "colMaMon";
             // 
             // coltenMH
             // 
             this.coltenMH.DataPropertyName = "TenMH";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coltenMH.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltenMH.DefaultCellStyle = dataGridViewCellStyle5;
             this.coltenMH.HeaderText = "Tên môn học";
             this.coltenMH.Name = "coltenMH";
             this.coltenMH.Width = 200;
@@ -239,9 +240,9 @@ namespace MainSub
             // colDiem
             // 
             this.colDiem.DataPropertyName = "Diem";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colDiem.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colDiem.DefaultCellStyle = dataGridViewCellStyle6;
             this.colDiem.HeaderText = "Điểm";
             this.colDiem.Name = "colDiem";
             // 

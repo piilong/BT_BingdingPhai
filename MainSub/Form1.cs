@@ -205,5 +205,13 @@ namespace MainSub
 
             }
         }
+
+        private void DgvKetqua_UserDeletedRow(object sender, DataGridViewRowEventArgs e)
+        {
+            // Cập nhật về CSDL
+            int n = adpKetQua.Update(ds.KETQUA);
+            if (n > 0)
+                MessageBox.Show("Cập nhật điểm thi cho sinh viên thành công", "Cập nhật kết quả thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
